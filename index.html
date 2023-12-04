@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+    <link rel="stylesheet" href="assets/font/HedvigLettersSerif-Regular-VariableFont_opsz.ttf">
+    <link rel="stylesheet" href="assets/style/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/master.css">
+</head>
+
+<body>
+    <main id="main">
+        <div class="container-fluid container-xxl h-100">
+            <div class="row align-items-end justify-content-center h-100 ">
+                <section class="credit_card col-11 col-lg-6">
+                    <div class=" div_card col-12 h-30">
+                        <div class="card">
+                            <div class="front_card">
+                                <div class="col-12 h-25 d-flex align-items-center text-white px-4">
+                                    <h4>Credit Card</h4>
+                                </div>
+                                <figure class="col-12 h-25 my-0 d-flex align-items-end px-4">
+                                    <img class="col-2 col-lg-1" src="assets/img/chip.png" alt="bank">
+                                </figure>
+                                <div class="col-12 h-25 d-flex justify-content-center align-items-end">
+                                    <h2 class="" id="show_card_number">0000 0000 0000 0000</h2>
+                                </div>
+                                <div class="col-12 h-25 d-flex px-4">
+                                    <h6 class="col-9 d-flex  align-items-center" id="show_card_name">Hossein Deyri</h6>
+                                    <h6 class="col-1 d-flex justify-content-end align-items-center" id="show_card_year">
+                                        00</h6>
+                                    <h6 class="col-1 d-flex justify-content-center align-items-center">/</h6>
+                                    <h6 class="col-1 d-flex justify-content-start align-items-center "
+                                        id="show_card_month">00</h6>
+                                </div>
+                            </div>
+                            <div class="back_card">
+                                <div class="col-12 h-25 bg-dark  mt-4"></div>
+                                <div class="col-12 h-25  px-4">
+                                    <span class="px-1 text-white">Cvv</span>
+                                    <h6 id="show_cvv" class="px-2 text-white">123</h6>
+                                </div>
+                                <div class="col-12 h-50 px-1 pb-2">
+                                    <p>
+                                        This card is property of X Bank. Misuse is criminal offence. If found, please
+                                        return to X Bank or to the nearest bank with Card Circuit logo.
+                                        Use of this card is subject to the credit card agreement.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div_form col-12  h-70">
+                        <label class="col-11 col-lg-8" for="inp_card_number">
+                            CARD NUMBER</label>
+                        <input class="col-11 col-lg-8" type="text" id="inp_card_number">
+                        <label class="col-11 col-lg-8 pt-3" for="inp_card_name">
+                            CARD HOLDER ( NAME ON CARD )</label>
+                        <input class="col-11 col-lg-8" type="text" id="inp_card_name">
+                        <div class="date_cvv col-11 col-lg-8 d-flex justify-content-center pt-2">
+                            <div class="div_date col-6 ">
+                                <label class="col-10 " for="inp_date_year">EXPIRE ( VALID UNTIL )</label>
+                                <input class="col-5 col-lg-4" type="text" id="inp_date_year">
+                                <input class="col-5 col-lg-4" type="text" id="inp_date_month">
+                            </div>
+                            <div class="col-6  row justify-content-end mx-0">
+                                <label class="col-9  d-flex justify-content-end px-0" for="inp_cvv">CVV</label>
+                                <input class="col-5 col-lg-4" type="text" id="inp_cvv">
+                            </div>
+                        </div>
+                        <button class="col-5 my-2">Submit</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="assets/js/master.js"></script>
+
+</html>

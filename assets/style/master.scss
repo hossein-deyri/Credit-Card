@@ -1,0 +1,121 @@
+#main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/animation-loop-Earth.gif);
+    background-size: cover;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    font-family: 'Hedvig Letters Serif', serif;
+
+    .credit_card {
+        height: 450px;
+        background: rgba(216, 212, 212, 0.2);
+        box-shadow: 0 30px 30px 0 rgba(28, 28, 29, 0.37);
+        backdrop-filter: blur(4px);
+        margin-bottom: 2%;
+        border-radius: 20px;
+
+        >.div_card {
+            height: 30%;
+            display: flex;
+            justify-content: center;
+
+            >.card {
+                width: 60%;
+                height: 160%;
+                border-radius: 20px;
+                transform: translateY(-50%);
+                position: relative;
+                transform-style: preserve-3d;
+                transition: 2s;
+                background-color: transparent;
+
+                @media screen and (max-width:768px) {
+                    width: 90%;
+                }
+
+                >.front_card {
+                    width: 100%;
+                    height: 100%;
+                    z-index: 20;
+                    transform-style: preserve-3d;
+                    background-image: url(../img/world-map.jpg);
+                    background-size: cover;
+                    border-radius: 20px;
+                    border: 1px solid transparent;
+
+                    >* {
+                        color: white;
+                    }
+
+                    #show_card_number {
+                        font-size: 2vw;
+
+                        @media screen and (max-width:992px) {
+                            font-size: 4vw;
+                        }
+                    }
+                }
+
+                >.back_card {
+                    width: 100%;
+                    height: 100%;
+                    background-image: url(../img/world-map.jpg);
+                    background-size: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translate3d(0%, 0%, -1px);
+                    transform-style: preserve-3d;
+                    border-radius: 20px;
+
+                    div {
+                        transform: rotateX(360deg) rotateY(180deg);
+                    }
+
+                    P {
+                        font-size: 11px;
+                        color: white;
+                        padding: 10px 10px;
+                    }
+                }
+            }
+        }
+
+        >.div_form {
+            height: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px 30px;
+            justify-content: center;
+
+            input {
+                outline: none;
+                height: 40px;
+                border: none;
+                border-radius: 20px;
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                padding-left: 10px;
+            }
+
+            button {
+                background-color: #10335B;
+                height: 40px;
+                border-radius: 20px;
+                color: #ffffff;
+                font-size: 20px;
+            }
+
+            label {
+                font-size: 1vw;
+                color: #ffffff;
+
+                @media screen and (max-width:992px) {
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+}
